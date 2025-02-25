@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 v133 = np.array([55,58,61,65,69,74,79,82,86,90,84,94,101,105,107,111,115,118,120,123,125,128,130,133,135,137,139,140,142,144,146,148,149,150,151,153,144,136,117,113,105,97,93,88,86,82,81,77,76,74,73,72,69,62,55,47,41,33,23,18,17,16,15,16,17,18,19,20,21,23,26,30,35,41,49,57,60,67,72,77,82,90,102,112,122,137,142,162,174,188,200,215,230,245,260,266])
 v2331 = np.arange(9,45,1)
@@ -30,6 +31,17 @@ i100 = v1100/((1/33)+(1/100))
 r100 = v2100/i100
 i1000 = v11000/((1/33)+(1/1000))
 r1000 = v21000/i1000
+
+df = pd.DataFrame({'v133':v133,'v233':v233,'i33':i33,'r33':r33})
+df1= pd.DataFrame({'v1100':v1100,'v2100':v2100,'i100':i100,'r100':r100})
+df2=pd.DataFrame({'v11000':v11000,'v21000':v21000,'i1000':i1000,'r1000':r1000})
+
+
+df.to_csv('33ohm.csv', sep=',', encoding='utf-8', index=False, header=True)
+df1.to_csv('100ohm.csv', sep=',', encoding='utf-8', index=False, header=True)
+df2.to_csv('1000ohm.csv', sep=',', encoding='utf-8', index=False, header=True)
+
+
 plt.plot(v233,i33)
 plt.show()
 plt.plot(v2100,i100)
