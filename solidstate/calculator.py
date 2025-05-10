@@ -1,8 +1,4 @@
 import numpy as np
 
-
-a = (3.65-0.50)*0.001
-b = (0.026-0.0035)
-slope = a/b
-s = (4*np.pi*0.0000001*2*9.8*slope)/(1.63*0.0001)
-print(s)
+a = 22.4*np.power(10,3)*2477.1029*(3/0.063)*(1/np.power(10,8))
+print(a)

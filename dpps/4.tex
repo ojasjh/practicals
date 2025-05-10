@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+% Define blue color for comments
+\definecolor{codeblue}{RGB}{0,0,255}
+
+% Create a command for blue comments
+\newcommand{\codeComment}[1]{\textcolor{codeblue}{#1}}
+
+\begin{document}
+
+\begin{algorithm}
+\caption{Example code}
+\begin{algorithmic}[1]
+\Statex \textbf{Input:} Your Input
+\Statex \textbf{Output:} Your output
+\Statex \textbf{Data:} Testing set $x$
+\State $\sum_{i=1}^{\infty} := 0$ \Comment{\codeComment{// this is a comment}}
+\State \codeComment{/* Now this is an if...else conditional loop */}
+\If{Condition 1}
+    \State Do something \Comment{\codeComment{// this is another comment}}
+    \If{sub-Condition}
+        \State Do a lot
+    \EndIf
+\ElsIf{Condition 2}
+    \State Do Otherwise
+    \State \codeComment{/* Now this is a for loop */}
+    \For{sequence}
+        \State loop instructions
+    \EndFor
+\Else
+    \State Do the rest
+    \State \codeComment{/* Now this is a While loop */}
+    \While{Condition}
+        \State Do something
+    \EndWhile
+\EndIf
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}

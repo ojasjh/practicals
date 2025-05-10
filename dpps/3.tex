@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+\title{Equations}
+\author{Prof. Naveen Kumar$^1$, Dr. Neeraj Kumar Sharma$^2$, and Sakeena Shahid$^3$\\
+\small $^1$Department of Computer Science, University of Delhi\\
+\small $^2$Ram Lal Anand College, University of Delhi\\
+\small $^3$SGTB Khalsa College, University of Delhi}
+\date{November 15, 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Maxwell's Equations}
+
+``Maxwell's equations'' are named for James Clark Maxwell and are as follows:
+
+\begin{align}
+\vec{\nabla} \cdot \vec{E} &= \frac{\rho}{\epsilon_0} & \text{Gauss's Law}\label{eq:gauss}\\
+\vec{\nabla} \cdot \vec{B} &= 0 & \text{Gauss's Law for Magnetism}\label{eq:gaussmag}\\
+\vec{\nabla} \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} & \text{Faraday's Law of Induction}\label{eq:faraday}\\
+\vec{\nabla} \times \vec{B} &= \mu_0\left(\epsilon_0\frac{\partial\vec{E}}{\partial t} + \vec{J}\right) & \text{Ampere's Circuital Law}\label{eq:ampere}
+\end{align}
+
+Equations 1, 2, 3, and 4 are some of the most important in Physics.
+
+\section{Matrix Equations}
+
+\begin{equation}
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{pmatrix}
+\begin{pmatrix}
+v_1 \\
+v_2 \\
+\vdots \\
+v_n
+\end{pmatrix} =
+\begin{pmatrix}
+w_1 \\
+w_2 \\
+\vdots \\
+w_n
+\end{pmatrix}
+\end{equation}
+
+\end{document}
